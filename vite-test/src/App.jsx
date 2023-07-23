@@ -1,13 +1,10 @@
-import Header from "./components/Header";
-import Layout from "./components/Layout";
+import { BrowserRouter } from "react-router-dom";
+import Layout from "./components/shared/Layout";
 
-const App = () => {
-  return (
-    <>
-      <Header />
-      <Layout />
-    </>
-  );
-};
+const App = () => (
+  <BrowserRouter>
+    <Layout />
+  </BrowserRouter>
+);
 
 export default App;
